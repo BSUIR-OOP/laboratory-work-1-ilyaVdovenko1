@@ -4,7 +4,7 @@ namespace Lab1App;
 /// <summary>
 /// Represents dot figure.
 /// </summary>
-public class Dot : Figure
+public class Dot : Circle
 {
     private readonly string stringDrawDotRepresentation;
 
@@ -14,7 +14,7 @@ public class Dot : Figure
     /// <param name="figureId">Uniq figure id.</param>
     /// <param name="point">Represents figure screen start point.</param>
     public Dot(int figureId, Position point)
-        : base(figureId, point, point)
+        : base(figureId, point, 0)
     {
         this.stringDrawDotRepresentation = $"I am a dot with {this.StartPoint.ToString()} point position";
     }

@@ -12,10 +12,9 @@ public class Circle : Figure
     /// </summary>
     /// <param name="figureId">Uniq circle id.</param>
     /// <param name="startPoint">Start point for draw.</param>
-    /// <param name="endPoint">End point for draw.</param>
     /// <param name="radius">Circle radius.</param>
-    public Circle(int figureId, Position startPoint, Position endPoint, decimal radius)
-        : base(figureId, startPoint, endPoint)
+    public Circle(int figureId, Position startPoint, decimal radius)
+        : base(figureId, startPoint, startPoint)
     {
         if (radius < 0)
         {
