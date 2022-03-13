@@ -24,12 +24,15 @@ public class Circle : Figure
 
         this.Radius = radius;
         this.stringRepresentationOfDrawingCircle =
-            $"I am a circle with start point ({this.StartPoint.XCoordinate},{this.StartPoint.YCoordinate}) and radius {this.Radius}";
+            $"I am a circle with start point {this.StartPoint} and radius {this.Radius}";
     }
 
     /// <summary>
     /// Gets circle radius.
     /// </summary>
+    /// <value>
+    /// Circle radius.
+    /// </value>
     public decimal Radius { get; }
 
     /// <summary>
