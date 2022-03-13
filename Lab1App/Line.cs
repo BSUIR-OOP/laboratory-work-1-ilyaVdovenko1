@@ -18,7 +18,7 @@ public class Line : Figure
     {
         this.Length = Math.Round(Math.Sqrt(Math.Pow(startPoint.XCoordinate - endPoint.XCoordinate, 2) +
                                       Math.Pow(startPoint.YCoordinate - endPoint.YCoordinate, 2)));
-        this.stringRepresentationOfLine = $"I am the line with length {this.Length}";
+        this.stringRepresentationOfLine = $"I am the {nameof(Line)} with length {this.Length}";
         this.FunctionalDependence = this.GetPointByOneCoordinate;
     }
 

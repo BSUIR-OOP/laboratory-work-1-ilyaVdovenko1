@@ -23,7 +23,7 @@ public class Circle : Figure
 
         this.Radius = radius;
         this.stringRepresentationOfDrawingCircle =
-            $"I am a {nameof(Circle)} with start point {this.StartPoint} and radius {this.Radius}";
+            $"I am the {nameof(Circle)} with start point {this.StartPoint} and radius {this.Radius}";
     }
 
     /// <summary>

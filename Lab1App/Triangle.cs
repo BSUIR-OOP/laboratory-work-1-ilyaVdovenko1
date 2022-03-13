@@ -17,7 +17,7 @@ public class Triangle : Figure
     public Triangle(int figureId, Position firstPoint, Position secondPoint, Position thirdPoint)
                 : base(figureId, firstPoint, thirdPoint)
     {
-        this.stringRepresentationOfTriangle = $"I am {nameof(Triangle)} with this three points: {firstPoint}, {secondPoint}, {thirdPoint}";
+        this.stringRepresentationOfTriangle = $"I am the {nameof(Triangle)} with this three points: {firstPoint}, {secondPoint}, {thirdPoint}";
     }
 
     /// <summary>
