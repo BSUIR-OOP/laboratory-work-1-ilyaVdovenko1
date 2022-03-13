@@ -16,8 +16,7 @@ public class Dot : Figure
     public Dot(int figureId, Position point)
         : base(figureId, point, point)
     {
-        this.stringDrawDotRepresentation = "I am a dot with " +
-                                      $"({this.StartPoint.XCoordinate}, {this.StartPoint.YCoordinate}) point position";
+        this.stringDrawDotRepresentation = $"I am a dot with {this.StartPoint.ToString()} point position";
     }
 
     /// <summary>
