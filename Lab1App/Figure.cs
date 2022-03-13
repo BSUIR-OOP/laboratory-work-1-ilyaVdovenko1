@@ -21,16 +21,25 @@ public abstract class Figure
     /// <summary>
     /// Gets figure screen start point.
     /// </summary>
+    /// <value>
+    /// Figure screen start point.
+    /// </value>
     public Position StartPoint { get; }
 
     /// <summary>
     /// Gets figure screen end point.
     /// </summary>
+    /// <value>
+    /// Figure screen end point.
+    /// </value>
     public Position EndPoint { get; }
 
     /// <summary>
     /// Gets an uniq figure id.
     /// </summary>
+    /// <value>
+    /// An uniq figure id.
+    /// </value>
     public int FigureId { get; }
 
     /// <summary>
