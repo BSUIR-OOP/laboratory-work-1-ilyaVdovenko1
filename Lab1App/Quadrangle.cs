@@ -23,6 +23,20 @@ public class Quadrangle : Figure
     }
 
     /// <summary>
+    /// Initializes a new instance of the <see cref="Quadrangle"/> class.
+    /// </summary>
+    /// <param name="figureId">Uniq figure id.</param>
+    /// <param name="startPoint">First point of Quadrangle.</param>
+    /// <param name="endPoint">End point of Quadrangle.</param>
+    /// <param name="figureType">Type of Rectangle.</param>
+    protected Quadrangle(int figureId, Position startPoint,  Position endPoint, Type figureType)
+        : base(figureId, startPoint, endPoint)
+    {
+        this.stringRepresentationOfQuadrangle =
+            $"I am the {figureType.Name} with this points: {startPoint}, {endPoint}";
+    }
+
+    /// <summary>
     /// Draws Quadrangle by returning string representation of it.
     /// </summary>
     /// <returns>String representation of Quadrangle.</returns>
