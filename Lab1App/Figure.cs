@@ -40,6 +40,7 @@ public abstract class Figure
     /// <value>
     /// An uniq figure id.
     /// </value>
+    // ReSharper disable once MemberCanBePrivate.Global
     public int FigureId { get; }
 
     /// <summary>
