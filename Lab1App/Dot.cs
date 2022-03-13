@@ -16,7 +16,7 @@ public class Dot : Circle
     public Dot(int figureId, Position point)
         : base(figureId, point, 0)
     {
-        this.stringDrawDotRepresentation = $"I am a dot with {this.StartPoint.ToString()} point position";
+        this.stringDrawDotRepresentation = $"I am a {nameof(Dot)} with {this.StartPoint.ToString()} point position";
     }
 
     /// <summary>
