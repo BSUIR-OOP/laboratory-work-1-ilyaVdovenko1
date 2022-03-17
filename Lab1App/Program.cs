@@ -1,6 +1,4 @@
-﻿#pragma warning disable SA1200
-using Lab1App;
-#pragma warning restore SA1200
+﻿using Lab1App.Classes;
 
 var listOfFigures = new List<Figure>()
 {

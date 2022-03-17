@@ -1,4 +1,4 @@
-﻿namespace Lab1App;
+﻿namespace Lab1App.Classes;
 
 /// <summary>
 /// Represents circle object.

@@ -1,4 +1,4 @@
-﻿namespace Lab1App;
+﻿namespace Lab1App.Classes;
 
 /// <summary>
 /// Represents position of object on the 2-D screen.
