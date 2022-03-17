@@ -5,7 +5,7 @@
 /// </summary>
 public class Circle : Figure
 {
-    private readonly string stringRepresentationOfDrawingCircle;
+    private readonly string drawCircleRepresentation;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Circle"/> class.
@@ -22,7 +22,7 @@ public class Circle : Figure
         }
 
         this.Radius = radius;
-        this.stringRepresentationOfDrawingCircle =
+        this.drawCircleRepresentation =
             $"I am the {nameof(Circle)} with start point {this.StartPoint} and radius {this.Radius}";
     }
 
@@ -40,6 +40,6 @@ public class Circle : Figure
     /// <returns>String representation of drawing circle.</returns>
     public override string Draw()
     {
-        return this.stringRepresentationOfDrawingCircle;
+        return this.drawCircleRepresentation;
     }
 }

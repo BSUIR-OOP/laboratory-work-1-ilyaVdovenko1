@@ -6,7 +6,7 @@ namespace Lab1App;
 /// </summary>
 public class Dot : Circle
 {
-    private readonly string stringDrawDotRepresentation;
+    private readonly string drawDotRepresentation;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Dot"/> class.
@@ -16,7 +16,7 @@ public class Dot : Circle
     public Dot(int figureId, Position point)
         : base(figureId, point, 0)
     {
-        this.stringDrawDotRepresentation = $"I am the {nameof(Dot)} with {this.StartPoint.ToString()} point position";
+        this.drawDotRepresentation = $"I am the {nameof(Dot)} with {this.StartPoint.ToString()} point position";
     }
 
     /// <summary>
@@ -25,6 +25,6 @@ public class Dot : Circle
     /// <returns>Text represented drawing process.</returns>
     public override string Draw()
     {
-        return this.stringDrawDotRepresentation;
+        return this.drawDotRepresentation;
     }
 }

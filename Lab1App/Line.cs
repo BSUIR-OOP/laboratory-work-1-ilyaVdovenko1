@@ -5,7 +5,7 @@
 /// </summary>
 public class Line : Figure
 {
-    private readonly string stringRepresentationOfLine;
+    private readonly string drawLineRepresentation;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Line"/> class.
@@ -18,7 +18,7 @@ public class Line : Figure
     {
         this.Length = Math.Round(Math.Sqrt(Math.Pow(startPoint.XCoordinate - endPoint.XCoordinate, 2) +
                                       Math.Pow(startPoint.YCoordinate - endPoint.YCoordinate, 2)));
-        this.stringRepresentationOfLine = $"I am the {nameof(Line)} with length {this.Length}";
+        this.drawLineRepresentation = $"I am the {nameof(Line)} with length {this.Length}";
         this.FunctionalDependence = this.GetPointByOneCoordinate;
     }
 
@@ -47,7 +47,7 @@ public class Line : Figure
     /// <returns>String representation of line.</returns>
     public override string Draw()
     {
-        return this.stringRepresentationOfLine;
+        return this.drawLineRepresentation;
     }
 
     /// <summary>

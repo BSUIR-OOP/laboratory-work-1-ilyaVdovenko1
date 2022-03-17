@@ -5,7 +5,7 @@
 /// </summary>
 public class Triangle : Figure
 {
-    private readonly string stringRepresentationOfTriangle;
+    private readonly string drawTriangleRepresentation;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Triangle"/> class.
@@ -17,7 +17,7 @@ public class Triangle : Figure
     public Triangle(int figureId, Position firstPoint, Position secondPoint, Position thirdPoint)
                 : base(figureId, firstPoint, thirdPoint)
     {
-        this.stringRepresentationOfTriangle = $"I am the {nameof(Triangle)} with this three points: {firstPoint}, {secondPoint}, {thirdPoint}";
+        this.drawTriangleRepresentation = $"I am the {nameof(Triangle)} with this three points: {firstPoint}, {secondPoint}, {thirdPoint}";
     }
 
     /// <summary>
@@ -26,6 +26,6 @@ public class Triangle : Figure
     /// <returns>String representation of triangle.</returns>
     public override string Draw()
     {
-        return this.stringRepresentationOfTriangle;
+        return this.drawTriangleRepresentation;
     }
 }

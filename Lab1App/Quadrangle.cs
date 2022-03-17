@@ -5,7 +5,7 @@
 /// </summary>
 public class Quadrangle : Figure
 {
-    private readonly string stringRepresentationOfQuadrangle;
+    private readonly string drawQuadrangleRepresentation;
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Quadrangle"/> class.
@@ -18,7 +18,7 @@ public class Quadrangle : Figure
     public Quadrangle(int figureId, Position firstPoint, Position secondPoint, Position thirdPoint, Position fourthPoint)
         : base(figureId, firstPoint, thirdPoint)
     {
-        this.stringRepresentationOfQuadrangle =
+        this.drawQuadrangleRepresentation =
             $"I am the {nameof(Quadrangle)} with this four points: {firstPoint}, {secondPoint}, {thirdPoint}, {fourthPoint}";
     }
 
@@ -32,7 +32,7 @@ public class Quadrangle : Figure
     protected Quadrangle(int figureId, Position startPoint,  Position endPoint, Type figureType)
         : base(figureId, startPoint, endPoint)
     {
-        this.stringRepresentationOfQuadrangle =
+        this.drawQuadrangleRepresentation =
             $"I am the {figureType.Name} with this points: {startPoint}, {endPoint}";
     }
 
@@ -42,6 +42,6 @@ public class Quadrangle : Figure
     /// <returns>String representation of Quadrangle.</returns>
     public override string Draw()
     {
-        return this.stringRepresentationOfQuadrangle;
+        return this.drawQuadrangleRepresentation;
     }
 }
